@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <style>
+          #my_headerbackground {
+              background-image: url(Untitled-1.jpg);
+              height: 400px;
+          }
+          img {
+              
+              padding-left: 40px;
+              padding-top: 65px;
+              float: left;
+          }
+          
+          #profile_header {
+              background-color: black; 
+              display: inline-block;
+              margin-top: 90px;
+              margin-left: 15px;
+              padding: 10px;
+              font-family: Times New Roman;
+              color:white;
+              font-size: 20px;
+              font-weight: bold;
+          }
+          #profile_heading2 {
+              background-color: black; 
+              display: inline-block;
+              margin-left: 15px;
+              padding: 10px;
+              font-family: Times New Roman;
+              color:white;
+              margin-top: 15px;
+              font-size: 15px;
+              font-weight: bold;
+          }
+          h1 {
+              font-family: Times New Roman;
+              font-weight: bold;
+              text-align: center;
+              font-size: 24px;
+          }
+          #form-bg {
+            text-align: center;
+            padding: 100px;
+          }
+          #div-bg {
+            background-color: #ad0a0b;
+            padding: 100px;
+            margin-left: 200px;
+            margin-right: 200px;
+            font-family: serif;
+            font-weight: bold;
+            color: white;
+            text-align: left;
+            font-size: 20px;
+          }
+          #section-bg {
+              margin-top: 10px;
+              margin-bottom: 10px;
+              background-color: #eceaeb;
+              width: 100%;
+              color: black;
+              height: 1400px;
+              padding-right: 50px;
+          }
+          input[type=text], input[type=password]{
+              width: 100%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              box-sizing: border-box;
+              font-family: sans-serif;
+              font-size: 20px;
+              font-weight: bold;
+          }
+          input[type=date]{
+              width: 50%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              box-sizing: border-box;
+              font-family: serif;
+              font-size: 18px;
+              font-weight: bold;
+          }
+          ::placeholder {
+              font-family: serif;
+              font-size: 18px;
+              font-weight: bold;
+          }
+          #label-format {
+              font-size: 18px;
+          }
+          #label-format2 {
+              text-align: right;
+              margin-left: 240px;
+          }
+          #zipcode {
+              width: 34%;
+              float: right;
+          }
+          #submitbtn {
+              background-color: white;
+              border: none;
+              width: 20%;
+              padding: 14px 20px;
+              margin-left: 110px;
+              margin-top: 40px;
+              font-family: sans-serif;
+              font-weight: bold;
+              font-size: 15px;
+          }
+          #resetbtn {
+              background-color: white;
+              border: none;
+              width: 20%;
+              padding: 14px 20px;
+              margin-left: 110px;
+              margin-top: 40px;
+              font-family: serif;
+              font-weight: bold;
+              font-size: 15px;
+          }
+          input[type=submit]:hover {
+              opacity: 90%;
+          }
+          input[type=reset]:hover {
+              opacity: 90%;
+          }
+          footer {
+              background-color:#ad0a0b; 
+              float: left;
+              height: 200px;
+              width: 100%;
+          }
+          #footer_title {
+              color: white;
+              font-size: 25px;
+              margin-top: 4%;
+              margin-left: 30px;
+          }
+          #footer_links {
+              color: white;
+              text-decoration: none;
+              font-size: 20px;
+              margin-left: 30px;
+              padding-bottom: 10px;
+          }
+          #footer_author {
+              float: right;
+              color: white;
+              font-size: 30px;
+              padding-right: 20px;
+          }
+        </style>    
+
+    </head>
+    <body>
+        <header id="my_headerbackground">
+            <img src="me.jpg" height="250px" width="300px">
+            <ul>
+                <li id="profile_header">Kenneth T. Albino</li><br>
+                <li id="profile_heading2">Web Development Activity</li><br>
+                <li id="profile_heading2">kenot269@gmail.com</li><br>
+                <li id="profile_heading2">San Isidro Labrador Quiot, Cebu City</li>
+            </ul>
+        </header>
+        <section id="section-bg">
+            <form id="form-bg">
+                <div id="div-bg">
+                    <h1>Registration Form</h1>
+                    <label id="label-format">First name</label>
+                    <input type="text" name="fname" placeholder="Enter first name">
+                    <label id="label-format">Family name</label>
+                    <input type="text" name="familyname" placeholder="Enter family name">
+                    <label id="label-format">Middle name</label>
+                    <input type="text" name="miname" placeholder="Enter middle name">
+                    <label id="label-format">Email <address></address></label>
+                    <input type="text" name="emailAdd" placeholder="Enter email address">
+                    <label id="label-format">Home address</label>
+                    <input type="text" name="homeAddress" placeholder="Enter home address">
+                    <label id="label-format">Gender</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male" id="label-format"> Male </label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female" id="label-format"> Female </label>
+                    <input type="radio" id="others" name="gender" value="others">
+                    <label for="others" id="label-format"> Others </label><br><br>
+                    <label id="label-format">Mobile number</label>
+                    <input type="text" name="mobilenum" placeholder="Enter mobile number">
+                    <label for="datebirth">Date of Birth</label><label id="label-format2">Zip code</label><br>
+                    <input type="date" id="datebirth" name="datebirth">
+                    <input type="text" name="zipcode" placeholder="Enter zip code" id="zipcode"><br>
+                    <label id="label-format">Province</label>
+                    <input type="text" name="province" placeholder="Enter province"><br>
+                    <label id="label-format">Hobbies</label>
+                    <input type="text" name="hobby" placeholder="Enter your hobbies">
+                    <input type="submit" value="Submit" id="submitbtn">
+                    <input type="reset" value="Reset" id="resetbtn">
+                </div>
+            </form>
+        </section>
+        <footer>
+            <p id="footer_title">Footer Links</p>
+            <span id="footer_author">&copy; Kenneth T. Albino 2020</span>
+            <a href="#" id="footer_links">About Me</a> <br>
+            <a href="#" id="footer_links">My Image Gallery</a> <br>
+            <a href="#" id="footer_links">Contacts</a>
+            
+        </footer>
+    </body>
+</html>
